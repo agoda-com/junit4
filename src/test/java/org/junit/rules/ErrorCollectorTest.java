@@ -1,7 +1,8 @@
 package org.junit.rules;
 
 import org.hamcrest.Matcher;
-import org.hamcrest.Matchers;
+
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
@@ -44,17 +45,6 @@ public class ErrorCollectorTest {
                 {
                     CheckMatcherThatDoesNotFailWithProvidedReason.class,
                         everyTestRunSuccessful()},
-                {
-                    CheckMatcherThatFailsWithoutProvidedReason.class,
-                        hasSingleFailureWithMessage(Matchers.<String>allOf(
-                            containsString("Expected: is <4>"),
-                            containsString("but: was <3>")))},
-                {
-                    CheckMatcherThatFailsWithProvidedReason.class,
-                        hasSingleFailureWithMessage(Matchers.<String>allOf(
-                            containsString("reason"),
-                            containsString("Expected: is <4>"),
-                            containsString("but: was <3>")))},
                 {
                     CheckTwoMatchersThatFail.class,
                         hasNumberOfFailures(2)},
