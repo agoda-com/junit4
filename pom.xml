@@ -4,7 +4,7 @@
 
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
-    <version>4.14</version>
+    <version>4.101</version>
 
     <name>JUnit</name>
     <description>JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.</description>
@@ -87,12 +87,12 @@
         <snapshotRepository>
             <id>junit-snapshot-repo</id>
             <name>Nexus Snapshot Repository</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <url>https://nexus.default.svc.agoda.mobi/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>junit-releases-repo</id>
             <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <url>https://nexus.default.svc.agoda.mobi/repository/maven-releases/</url>
         </repository>
         <site>
             <id>junit.github.io</id>
